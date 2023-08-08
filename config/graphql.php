@@ -2,6 +2,10 @@
 
 declare(strict_types = 1);
 
+use App\GraphQL\Queries;
+use App\GraphQL\Types;
+use App\GraphQL\UnionTypes;
+
 return [
     'route' => [
         // The prefix for routes; do NOT use a leading slash!
@@ -75,7 +79,7 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                // ExampleQuery::class,
+                'sites' => Queries\SiteQuery::class,
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -106,6 +110,7 @@ return [
     // ]
     //
     'types' => [
+        Types\SiteType::class,
         // ExampleType::class,
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
@@ -167,6 +172,18 @@ return [
      * 'defaultFieldResolver' => [SomeKlass::class, 'someMethod'],
      * ```
      */
+    'graphiql' => [
+        'prefix' => 'graphiql', // Do NOT use a leading slash
+        'controller' => \Rebing\GraphQL\GraphQLController::class . '@graphiql',
+        'middleware' => [
+            'web',
+            'can:admin'
+        ],
+        'view' => 'graphql::graphiql',
+        'display' => env('ENABLE_GRAPHIQL', true),
+    ],
+
+
     'defaultFieldResolver' => null,
 
     /*
@@ -201,7 +218,7 @@ return [
         'cache_prefix' => config('cache.prefix') . ':graphql.apq',
 
         // The cache ttl in seconds - See https://www.apollographql.com/docs/apollo-server/performance/apq/#adjusting-cache-time-to-live-ttl
-        'cache_ttl' => 300,
+        'cache_ttl' => 604800,
     ],
 
     /*
