@@ -771,3 +771,125 @@
 2023/08/17 08:22:57 [notice] 1#1: start worker process 37
 2023/08/17 08:22:57 [notice] 1#1: start worker process 38
 2023/08/17 08:22:57 [notice] 1#1: start worker process 39
+2023/08/18 06:09:24 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:09:35 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:09:47 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:09:59 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:10:11 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:10:22 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:10:34 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:10:46 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:10:58 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:11:10 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:11:42 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:11:54 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:12:38 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:12:54 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:13:27 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:13:38 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:14:06 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:14:35 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:15:05 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:15:33 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:16:00 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:16:19 [emerg] 1#1: host not found in upstream "app" in /etc/nginx/conf.d/default.conf:16
+2023/08/18 06:16:36 [notice] 1#1: using the "epoll" event method
+2023/08/18 06:16:36 [notice] 1#1: nginx/1.25.1
+2023/08/18 06:16:36 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/18 06:16:36 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/08/18 06:16:36 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/18 06:16:36 [notice] 1#1: start worker processes
+2023/08/18 06:16:36 [notice] 1#1: start worker process 28
+2023/08/18 06:16:36 [notice] 1#1: start worker process 29
+2023/08/18 06:16:36 [notice] 1#1: start worker process 30
+2023/08/18 06:16:36 [notice] 1#1: start worker process 31
+2023/08/18 06:16:36 [notice] 1#1: start worker process 32
+2023/08/18 06:16:36 [notice] 1#1: start worker process 33
+2023/08/18 06:16:36 [notice] 1#1: start worker process 34
+2023/08/18 06:16:36 [notice] 1#1: start worker process 35
+2023/08/18 06:16:36 [notice] 1#1: start worker process 36
+2023/08/18 06:16:36 [notice] 1#1: start worker process 37
+2023/08/18 06:16:36 [notice] 1#1: start worker process 38
+2023/08/18 06:16:36 [notice] 1#1: start worker process 39
+2023/08/18 10:51:13 [error] 31#31: *564 client intended to send too large body: 1287288 bytes, client: 172.18.0.1, server: , request: "POST /livewire/upload-file?expires=1692356173&signature=4047665d13fac05e4ca2f19111a8646535f48463f7dbf93ca310a09a10fb3e17 HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/admin/sites/2/edit?activeRelationManager=0"
+2023/08/18 10:51:19 [error] 32#32: *566 client intended to send too large body: 1287288 bytes, client: 172.18.0.1, server: , request: "POST /livewire/upload-file?expires=1692356179&signature=b7ea6724eb4d127e370834187f3865894b304e7ba8e51f0b49f0a38e373807f6 HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/admin/sites/2/edit?activeRelationManager=0"
+2023/08/18 10:51:27 [error] 32#32: *571 client intended to send too large body: 1060350 bytes, client: 172.18.0.1, server: , request: "POST /livewire/upload-file?expires=1692356187&signature=cbf176857df749a693b9e90d7f998ad78213cb59010c95b9189c21dc5316f6ff HTTP/1.1", host: "localhost:8081", referrer: "http://localhost:8081/admin/sites/2/edit?activeRelationManager=0"
+2023/08/18 15:19:29 [notice] 1#1: signal 3 (SIGQUIT) received, shutting down
+2023/08/18 15:19:29 [notice] 30#30: gracefully shutting down
+2023/08/18 15:19:29 [notice] 32#32: gracefully shutting down
+2023/08/18 15:19:29 [notice] 31#31: gracefully shutting down
+2023/08/18 15:19:29 [notice] 29#29: gracefully shutting down
+2023/08/18 15:19:29 [notice] 28#28: gracefully shutting down
+2023/08/18 15:19:29 [notice] 32#32: exiting
+2023/08/18 15:19:29 [notice] 37#37: gracefully shutting down
+2023/08/18 15:19:29 [notice] 37#37: exiting
+2023/08/18 15:19:29 [notice] 29#29: exiting
+2023/08/18 15:19:29 [notice] 28#28: exiting
+2023/08/18 15:19:29 [notice] 29#29: exit
+2023/08/18 15:19:29 [notice] 32#32: exit
+2023/08/18 15:19:29 [notice] 30#30: exiting
+2023/08/18 15:19:29 [notice] 28#28: exit
+2023/08/18 15:19:29 [notice] 31#31: exiting
+2023/08/18 15:19:29 [notice] 30#30: exit
+2023/08/18 15:19:29 [notice] 37#37: exit
+2023/08/18 15:19:29 [notice] 31#31: exit
+2023/08/18 15:19:29 [notice] 36#36: gracefully shutting down
+2023/08/18 15:19:29 [notice] 36#36: exiting
+2023/08/18 15:19:29 [notice] 36#36: exit
+2023/08/18 15:19:29 [notice] 34#34: gracefully shutting down
+2023/08/18 15:19:29 [notice] 35#35: gracefully shutting down
+2023/08/18 15:19:29 [notice] 33#33: gracefully shutting down
+2023/08/18 15:19:29 [notice] 38#38: gracefully shutting down
+2023/08/18 15:19:29 [notice] 39#39: gracefully shutting down
+2023/08/18 15:19:29 [notice] 38#38: exiting
+2023/08/18 15:19:29 [notice] 34#34: exiting
+2023/08/18 15:19:29 [notice] 34#34: exit
+2023/08/18 15:19:29 [notice] 38#38: exit
+2023/08/18 15:19:29 [notice] 33#33: exiting
+2023/08/18 15:19:29 [notice] 33#33: exit
+2023/08/18 15:19:29 [notice] 39#39: exiting
+2023/08/18 15:19:29 [notice] 39#39: exit
+2023/08/18 15:19:29 [notice] 35#35: exiting
+2023/08/18 15:19:29 [notice] 35#35: exit
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 32
+2023/08/18 15:19:29 [notice] 1#1: worker process 32 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 37
+2023/08/18 15:19:29 [notice] 1#1: worker process 37 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 33
+2023/08/18 15:19:29 [notice] 1#1: worker process 29 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 33 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 36 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 31
+2023/08/18 15:19:29 [notice] 1#1: worker process 31 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 34 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 35
+2023/08/18 15:19:29 [notice] 1#1: worker process 30 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 35 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: signal 29 (SIGIO) received
+2023/08/18 15:19:29 [notice] 1#1: signal 17 (SIGCHLD) received from 38
+2023/08/18 15:19:29 [notice] 1#1: worker process 28 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 38 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: worker process 39 exited with code 0
+2023/08/18 15:19:29 [notice] 1#1: exit
+2023/08/18 15:19:32 [notice] 1#1: using the "epoll" event method
+2023/08/18 15:19:32 [notice] 1#1: nginx/1.25.1
+2023/08/18 15:19:32 [notice] 1#1: built by gcc 12.2.0 (Debian 12.2.0-14) 
+2023/08/18 15:19:32 [notice] 1#1: OS: Linux 5.10.16.3-microsoft-standard-WSL2
+2023/08/18 15:19:32 [notice] 1#1: getrlimit(RLIMIT_NOFILE): 1048576:1048576
+2023/08/18 15:19:32 [notice] 1#1: start worker processes
+2023/08/18 15:19:32 [notice] 1#1: start worker process 28
+2023/08/18 15:19:32 [notice] 1#1: start worker process 29
+2023/08/18 15:19:32 [notice] 1#1: start worker process 30
+2023/08/18 15:19:32 [notice] 1#1: start worker process 31
+2023/08/18 15:19:32 [notice] 1#1: start worker process 32
+2023/08/18 15:19:32 [notice] 1#1: start worker process 33
+2023/08/18 15:19:32 [notice] 1#1: start worker process 34
+2023/08/18 15:19:32 [notice] 1#1: start worker process 35
+2023/08/18 15:19:32 [notice] 1#1: start worker process 36
+2023/08/18 15:19:32 [notice] 1#1: start worker process 37
+2023/08/18 15:19:32 [notice] 1#1: start worker process 38
+2023/08/18 15:19:32 [notice] 1#1: start worker process 39

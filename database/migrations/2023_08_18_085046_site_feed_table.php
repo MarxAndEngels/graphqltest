@@ -13,17 +13,19 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('dealers', function (Blueprint $table) {
+        Schema::create('site_feed', function (Blueprint $table) {
             $table->id();
-            $table->string('title', '40');
-            $table->string('slug', '40');
-            $table->string('city', '40')->nullable();
-            $table->foreignId('user_id')
+            $table->foreignId('site_id')
                 ->index()
-                ->constrained('users')
+                ->constrained('sites')
                 ->cascadeOnUpdate()
                 ->restrictOnDelete();
-            $table->timestamps()->nullable();
+            $table->foreignId('feed_id')
+                ->index()
+                ->constrained('feeds')
+                ->cascadeOnUpdate()
+                ->restrictOnDelete();
+            $table->timestamps();
         });
     }
 
@@ -34,6 +36,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('dealers');
+        Schema::dropIfExists('site_feed');
     }
 };

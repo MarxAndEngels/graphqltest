@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SitesController;
+use App\Http\Controllers\DealerController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -14,7 +15,10 @@ use App\Http\Controllers\SitesController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+//    return view('welcome');
+    return redirect()->route('filament.auth.login');
 });
 
 Route::get("/sites", SitesController::class)->name('sites.index');
+Route::get("/dealer", DealerController::class)->name('dealer.index');
+Route::get("/feeds", \App\Http\Controllers\FeedController::class)->name('feeds.index');

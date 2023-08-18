@@ -79,7 +79,9 @@ return [
     'schemas' => [
         'default' => [
             'query' => [
-                'sites' => Queries\SiteQuery::class,
+                // ExampleQuery::class,
+                // App\GraphQL\Queries\SiteQuery::class,
+                Queries\FeedQuery::class,
             ],
             'mutation' => [
                 // ExampleMutation::class,
@@ -110,11 +112,17 @@ return [
     // ]
     //
     'types' => [
-        Types\SiteType::class,
+        Types\feedType::class,
+        // App\GraphQL\SiteType::class,
         // ExampleType::class,
         // ExampleRelationType::class,
         // \Rebing\GraphQL\Support\UploadType::class,
     ],
+
+    // The types will be loaded on demand. Default is to load all types on each request
+    // Can increase performance on schemes with many types
+    // Presupposes the config type key to match the type class name property
+    'lazyload_types' => true,
 
     // This callable will be passed the Error object for each errors GraphQL catch.
     // The method should return an array representing the error.
@@ -158,6 +166,17 @@ return [
     'simple_pagination_type' => \Rebing\GraphQL\Support\SimplePaginationType::class,
 
     /*
+     * Config for GraphiQL (see (https://github.com/graphql/graphiql).
+     */
+    'graphiql' => [
+        'prefix' => 'graphiql', // Do NOT use a leading slash
+        'controller' => \Rebing\GraphQL\GraphQLController::class . '@graphiql',
+        'middleware' => [],
+        'view' => 'graphql::graphiql',
+        'display' => env('ENABLE_GRAPHIQL', true),
+    ],
+
+    /*
      * Overrides the default field resolver
      * See http://webonyx.github.io/graphql-php/data-fetching/#default-field-resolver
      *
@@ -172,18 +191,6 @@ return [
      * 'defaultFieldResolver' => [SomeKlass::class, 'someMethod'],
      * ```
      */
-    'graphiql' => [
-        'prefix' => 'graphiql', // Do NOT use a leading slash
-        'controller' => \Rebing\GraphQL\GraphQLController::class . '@graphiql',
-        'middleware' => [
-            'web',
-            'can:admin'
-        ],
-        'view' => 'graphql::graphiql',
-        'display' => env('ENABLE_GRAPHIQL', true),
-    ],
-
-
     'defaultFieldResolver' => null,
 
     /*
@@ -218,7 +225,7 @@ return [
         'cache_prefix' => config('cache.prefix') . ':graphql.apq',
 
         // The cache ttl in seconds - See https://www.apollographql.com/docs/apollo-server/performance/apq/#adjusting-cache-time-to-live-ttl
-        'cache_ttl' => 604800,
+        'cache_ttl' => 300,
     ],
 
     /*
