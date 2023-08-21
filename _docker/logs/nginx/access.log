@@ -1343,3 +1343,6 @@
 172.23.0.1 - - [21/Aug/2023:13:03:05 +0000] "GET /graphql HTTP/1.1" 500 1114415 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 172.23.0.1 - - [21/Aug/2023:13:03:05 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://localhost:8081/graphql" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
 172.24.0.1 - - [21/Aug/2023:13:04:21 +0000] "GET /graphql HTTP/1.1" 500 1114391 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36"
+172.19.0.1 - - [21/Aug/2023:21:22:27 +0000] "GET / HTTP/1.1" 200 490 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+172.19.0.1 - - [21/Aug/2023:21:22:27 +0000] "GET /favicon.ico HTTP/1.1" 200 0 "http://localhost:8081/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
+172.19.0.1 - - [21/Aug/2023:21:22:30 +0000] "GET / HTTP/1.1" 200 490 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/115.0.0.0 Safari/537.36"
