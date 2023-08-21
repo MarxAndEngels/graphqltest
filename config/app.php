@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Facade;
 
+use App\GraphQL;
+use App\GraphQL\Types;
+
+//GraphQL::addType(Types\FeedType::class);
+
+
 return [
 
     /*
@@ -193,5 +199,4 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // ...
     ])->toArray(),
-
 ];

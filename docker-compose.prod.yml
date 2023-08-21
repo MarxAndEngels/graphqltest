@@ -83,7 +83,7 @@ services:
     restart: always
     ports:
       - "6382:6379"
-    command: redis-server --appendonly yes --replica-read-only no
+    command: redis-server --appendonly yes --replica-read-only main
     networks:
       - app-net
 

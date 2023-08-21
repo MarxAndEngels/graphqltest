@@ -113,6 +113,7 @@ return [
     //
     'types' => [
         Types\FeedType::class,
+        Types\SiteType::class,
         // App\GraphQL\SiteType::class,
         // ExampleType::class,
         // ExampleRelationType::class,
@@ -131,7 +132,7 @@ return [
     //     'message' => '',
     //     'locations' => []
     // ]
-    'error_formatter' => [\Rebing\GraphQL\GraphQL::class, 'formatError'],
+    'error_formatter' => [\App\Complex\GraphQL\GraphQLExceptions::class, 'formatError'],
 
     /*
      * Custom Error Handling
@@ -140,7 +141,7 @@ return [
      *
      * The default handler will pass exceptions to laravel Error Handling mechanism
      */
-    'errors_handler' => [\Rebing\GraphQL\GraphQL::class, 'handleErrors'],
+    'errors_handler' => [\App\Complex\GraphQL\GraphQLErrorsHandler::class, 'customHandleErrors'],
 
     /*
      * Options to limit the query complexity and depth. See the doc

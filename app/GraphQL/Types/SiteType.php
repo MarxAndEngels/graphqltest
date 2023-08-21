@@ -17,7 +17,7 @@ class SiteType extends GraphQLType
     protected $attributes = [
         'name' => 'Site',
         'description' => '',
-        model => Site::class
+        'model' => Site::class
     ];
 
     public function fields(): array
