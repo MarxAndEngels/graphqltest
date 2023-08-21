@@ -4,11 +4,12 @@ declare(strict_types=1);
 
 namespace App\GraphQL\Queries;
 
-use App\Models\Feed;
+use App\GraphQL\Types\FeedType;
 use Closure;
 use GraphQL\Type\Definition\ResolveInfo;
 use GraphQL\Type\Definition\Type;
 use Rebing\GraphQL\Support\Query;
+use Rebing\GraphQL\Support\Facades\GraphQL;
 use Rebing\GraphQL\Support\SelectFields;
 
 class FeedQuery extends Query
@@ -20,7 +21,8 @@ class FeedQuery extends Query
 
     public function type(): Type
     {
-        return Type::listOf(GraphQL::type('Feed'));
+        return GraphQL::type(FeedType::class);
+//        return Type::listOf(GraphQL::type(FeedType::class));
     }
 
     public function resolve($root, array $args, $context, ResolveInfo $resolveInfo, Closure $getSelectFields)

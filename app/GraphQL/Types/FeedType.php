@@ -6,16 +6,15 @@ namespace App\GraphQL\Types;
 
 use App\Models\Feed;
 use Rebing\GraphQL\Support\Type as GraphQLType;
-use App\Complex\GraphQL\Field;
 use App\Constants\Attributes\AttributeName;
 use GraphQL\Type\Definition\Type;
 
-class feedType extends GraphQLType
+class FeedType extends GraphQLType
 {
     protected $attributes = [
         'name' => 'feed',
         'description' => 'A type',
-        'model' => Feed::class
+        'model' => FeedType::class
     ];
 
     public function fields(): array

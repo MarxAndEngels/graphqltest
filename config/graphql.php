@@ -112,7 +112,7 @@ return [
     // ]
     //
     'types' => [
-        Types\feedType::class,
+        Types\FeedType::class,
         // App\GraphQL\SiteType::class,
         // ExampleType::class,
         // ExampleRelationType::class,
